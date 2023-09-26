@@ -1,0 +1,156 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;600;700&display=swap');
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/button.css';
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/call-btn.css';
+@import './block/swiper.css';
+@import './block/sliders.css';
+@import './block/faq.css';
+
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
+        font-weight: 400;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+.header-call-button {
+    @apply py-3 px-8 bg-blue rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
+}
+
+.header-call-button:hover {
+    background-color: transparent;
+    color: #5278DA;
+}
+
+/* Прочие классы */
+
+.lock {
+    overflow: hidden;
+}
+
+.shadow-item {
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 11px rgba(133, 118, 38, 0.13));
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 42px 35px 19px;
+    position: relative;
+    width: 230px;
+    height: 103px;
+}
+
+.shadow-item img {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+}
+
+.shadow-filter {
+    filter: drop-shadow(0px 0px 11px rgba(133, 118, 38, 0.13));
+}
+
+.shadow-filter-1 {
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.education-btn-wrapper {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.question-title {
+    position: relative;
+}
+
+.question-title:before,
+.question-title::after {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 58px;
+    top: 0;
+}
+
+.question-title:before {
+    left: -120px;
+    background-image: url('../src/img/question-left.svg');
+    background-repeat: no-repeat;
+}
+
+.question-title::after {
+    right: 0;
+    background-image: url('../src/img/question-right.svg');
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1023px) {
+    .education__item {
+        grid-template-columns: 40% 60%;
+        gap: 20px;
+    }
+
+    .oblaka-section {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        height: 480px;
+        width: 100%;
+        background-image: url('../src/img/pattern.webp');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+    .oblaka-section:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('../src/img/pattern.webp');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-btn-wrapper {
+        right: 40px;
+    }
+}

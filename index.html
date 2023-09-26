@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алиса знает что делать?</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="h-screen grid grid-rows-[auto_1fr_auto]">
+        <header class="z-10 w-full md-28 transition-colors">
+            <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
+                <img loading="lazy" src="./src/img/logo.jpg" width="147" height="46" alt="лого">
+                <ul class="flex gap-2 flex-wrap text-main-black">
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-1">О нас</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-2">Фото и видео</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-3">Прайс-лист</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-4">Отзывы</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-5">Контакты</a></li>
+                </ul>
+                <a class="header-call-button" href="#">Записаться</a>
+            </div>
+
+            <!-- мобильное меню -->
+            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
+                <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.jpg" width="147" height="46"
+                    alt="лого">
+                <div class="mobile-menu bg-metal">
+                    <ul class="flex flex-col pb-11 text-main-black pt-4">
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors nav-link" href="#"
+                                data-goto=".page-section-1">О нас</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors nav-link" href="#"
+                                data-goto=".page-section-2">Фото и видео</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors nav-link" href="#"
+                                data-goto=".page-section-3">Прайс-лист</a></li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors nav-link" href="#"
+                                data-goto=".page-section-4">Отзывы</a></li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors nav-link" href="#"
+                                data-goto=".page-section-5">Контакты</a></li>
+                        h
+                    </ul>
+                    <a class="header-call-button block w-full mx-3" href="#">Записаться</a>
+                </div>
+
+                <button class="btn-close-menu md:hidden absolute top-5 right-5">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main>
+        </main>
+
+        <footer class="py-12 wow fadeInUp">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="container">
+                <div class="flex items-center justify-between flex-col sm:flex-row py-5 ">
+                    <p>Алиса знает, что делать 2023. Все права защищены</p>
+                    <p>Политика конфиденциальности</p>
+                    <a class="hover:text-blue transition-colors" href="http://inside360.ru" target="_blank">Сделано
+                        в INSIDE360</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
