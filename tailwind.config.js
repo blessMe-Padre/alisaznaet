@@ -28,15 +28,19 @@ module.exports = {
       'light-black': '#5E5D5C',
       'light-black-2': 'rgba(26, 26, 26, 0.70)',
       'light-black-3': 'rgba(0, 0, 0, 0.40)',
-      'blue': '#5278DA',
-      'blue-light': '#203D8A',
+      'blue': '#81B8F9',
+      'green': '#D1D618',
     },
 
     container: {
       padding: '20px',
       center: true
     },
-    extend: {}
+    extend: {
+      // fontFamily: {
+      //   'bodyFont': ['archangelsk', 'regular'],
+      // }
+    }
   },
   plugins: [],
 }

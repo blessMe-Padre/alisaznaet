@@ -1,6 +1,5 @@
 export const initNav = () => {
     const body = document.querySelector('body');
-
     // Меню
     const mobileMenu = document.querySelector('.mobile-menu');
     const menuButton = document.querySelector('.btn-close-menu');
