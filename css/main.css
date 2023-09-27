@@ -1759,6 +1759,10 @@ body {
   padding: 6rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1792,6 +1796,11 @@ body {
 
 .text-\[67px\]{
   font-size: 67px;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-normal{
@@ -1922,6 +1931,10 @@ body {
 }
 
 @media (min-width: 1024px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1930,7 +1943,42 @@ body {
     display: none;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:p-24{
+    padding: 6rem;
+  }
+
+  .md\:p-6{
+    padding: 1.5rem;
+  }
+
   .md\:pt-2{
     padding-top: 0.5rem;
+  }
+
+  .md\:text-\[67px\]{
+    font-size: 67px;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .lg\:p-24{
+    padding: 6rem;
+  }
+
+  .lg\:text-\[67px\]{
+    font-size: 67px;
+  }
+
+  .lg\:leading-none{
+    line-height: 1;
   }
 }
