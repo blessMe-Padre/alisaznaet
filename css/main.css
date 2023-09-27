@@ -1470,7 +1470,7 @@ video {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  color: #262626;
   background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
   font-weight: 400;
 }
@@ -1643,6 +1643,10 @@ body {
   z-index: 10;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -1662,6 +1666,18 @@ body {
 
 .mr-4{
   margin-right: 1rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .block{
@@ -1684,16 +1700,72 @@ body {
   height: 100vh;
 }
 
+.h-\[600px\]{
+  height: 600px;
+}
+
+.h-\[60vw\]{
+  height: 60vw;
+}
+
+.h-\[30vw\]{
+  height: 30vw;
+}
+
+.h-\[40vw\]{
+  height: 40vw;
+}
+
+.h-\[35vw\]{
+  height: 35vw;
+}
+
+.h-\[350px\]{
+  height: 350px;
+}
+
+.max-h-\[600px\]{
+  max-height: 600px;
+}
+
 .w-full{
   width: 100%;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
 }
 
 .max-w-sm{
   max-width: 24rem;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[\]{
+  grid-template-columns: ;
+}
+
+.grid-cols-\[auto-fit_minmax\(290px\2c _1fr\)\]{
+  grid-template-columns: auto-fit minmax(290px, 1fr);
+}
+
+.grid-cols-\[repeat\(auto-fit_minmax\(290px\2c _1fr\)\)\]{
+  grid-template-columns: repeat(auto-fit minmax(290px, 1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(290px\2c _1fr\)\)\]{
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(360px\2c _1fr\)\)\]{
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .grid-rows-\[auto_1fr_auto\]{
@@ -1728,6 +1800,10 @@ body {
   gap: 1.25rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1755,8 +1831,9 @@ body {
   background-color: rgb(86 85 132 / var(--tw-bg-opacity));
 }
 
-.p-24{
-  padding: 6rem;
+.bg-light-gray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 247 / var(--tw-bg-opacity));
 }
 
 .p-5{
@@ -1773,9 +1850,29 @@ body {
   padding-bottom: 3rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pb-11{
@@ -1790,17 +1887,31 @@ body {
   padding-top: 1rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-bodyFont{
   font-family: archangelsk, regular;
 }
 
-.text-\[67px\]{
-  font-size: 67px;
+.text-\[55px\]{
+  font-size: 55px;
 }
 
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-normal{
@@ -1811,12 +1922,9 @@ body {
   text-transform: uppercase;
 }
 
-.leading-none{
-  line-height: 1;
-}
-
 .text-main-black{
-  color: rgba(0, 0, 0, 0.90);
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -1876,7 +1984,7 @@ body {
 
 .popup-link{
   position: relative;
-  z-index: 10;
+  z-index: 1;
   display: block;
   border-radius: 0.5rem;
   border-width: 2px;
@@ -1931,6 +2039,10 @@ body {
 }
 
 @media (min-width: 1024px){
+  .md\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1943,24 +2055,25 @@ body {
     display: none;
   }
 
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:h-\[600px\]{
+    height: 600px;
   }
 
-  .md\:p-24{
-    padding: 6rem;
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:p-6{
     padding: 1.5rem;
   }
 
-  .md\:pt-2{
-    padding-top: 0.5rem;
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
-  .md\:text-\[67px\]{
-    font-size: 67px;
+  .md\:pt-2{
+    padding-top: 0.5rem;
   }
 
   .md\:text-3xl{
@@ -1976,6 +2089,10 @@ body {
 
   .lg\:text-\[67px\]{
     font-size: 67px;
+  }
+
+  .lg\:text-\[55px\]{
+    font-size: 55px;
   }
 
   .lg\:leading-none{

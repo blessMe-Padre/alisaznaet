@@ -4,8 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
 
     initNav();
-
-    const header = document.querySelector('header');
+    baguetteBox.run('.gallery-wrapper');
 
     // DOMContentLoaded
 });

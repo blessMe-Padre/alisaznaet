@@ -23,10 +23,10 @@ module.exports = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       // ---------------------------------
-      'main-black': 'rgba(0, 0, 0, 0.90)',
+      'main-black': '#262626',
       'default-black': '#000000',
       'light-black': '#5E5D5C',
-      'light-black-2': 'rgba(26, 26, 26, 0.70)',
+      'light-gray': '#F3F3F7',
       'light-black-3': 'rgba(0, 0, 0, 0.40)',
       'blue': '#81B8F9',
       'green': '#D1D618',
