@@ -6,7 +6,6 @@
 @import './block/button.css';
 @import './block/menu-button.css';
 @import './block/menu.css';
-@import './block/call-btn.css';
 @import './block/swiper.css';
 @import './block/sliders.css';
 
@@ -43,16 +42,20 @@
 /* Директивы классов */
 
 .header-call-button {
-    @apply py-3 px-8 bg-blue rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
+    @apply py-3 px-8 bg-main-black rounded-3xl text-white font-semibold w-44 text-center border-solid border-main-black border-[2px] transition-all block;
 }
 
 .header-call-button:hover {
     background-color: transparent;
-    color: #5278DA;
+    color: #262626;
 }
 
 .popup-link {
     @apply block py-3 px-8 bg-green rounded-lg text-center border-solid border-green border-[2px] transition-all relative z-[1] hover:bg-transparent;
+}
+
+.nav-link {
+    @apply text-lg font-bodyFont uppercase hover:text-blue transition-colors;
 }
 
 /* Прочие классы */
