@@ -874,163 +874,50 @@ button.swiper-pagination-bullet{
   overflow:hidden
 }
 
-.teachers-section .swiper-button-wrapper {
+.swiper-button-wrapper {
+  display: block;
   position: relative;
-  max-width: 160px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 30px;
+  max-width: 190px;
+  margin: 60px auto 0;
 }
 
-.clients-swiper .swiper-button-wrapper {
-  position: relative;
-  max-width: 660px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px auto;
-}
-
-@media (min-width: 1023px) {
-  .clients-swiper .swiper-button-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-  }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: 50px;
-  height: 44px;
-}
-
-.swiper-button-prev::before,
-.swiper-button-next::before {
+.swiper-button-prev::after {
   content: '';
   position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #0084FF;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: url('../src/img/arrow.svg');
+  background-repeat: no-repeat;
 }
 
-.swiper-button-prev::before {
-  top: 30%;
-  right: -10px;
-}
-
-.swiper-button-next::before {
-  top: 30%;
-  left: -10px;
-}
-
-._tabs-block {
-  display: none;
-}
-
-._tabs-block._active {
-  display: grid;
-}
-
-._tabs-content {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  will-change: max-height;
-  transition: all 0.3s ease;
-  box-sizing: border-box;
-}
-
-._tabs-content._active {
-  opacity: 1;
-}
-
-._tabs-block ul {
-  margin-top: 30px;
-}
-
-._tabs-block li {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-/* faq start  */
-
-.faq {
-  padding: 80px 0;
-}
-
-.faq__wrapper {
-  margin: 0 auto;
-}
-
-.faq__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.faq__item {
-  padding: 5px 0;
-  /* border-top: 1px solid #eeeeee; */
-}
-
-.faq__btn {
-  position: relative;
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #DFDED9;
-  font-size: 20px;
-  padding: 10px 45px 10px 15px;
-  cursor: pointer;
-  text-align: left;
-  border-radius: 10px;
-}
-
-.faq__btn._active.faq__btn::before {
-  transform: rotate(-45deg);
-}
-
-.faq__btn._active.faq__btn::after {
-  transform: rotate(45deg);
-}
-
-.faq__btn::before,
-.faq__btn::after {
-  content: "";
+.swiper-button-next::after {
+  content: '';
   position: absolute;
-  right: 20px;
-  width: 2px;
-  height: 20px;
-  background-color: #1d2131;
-  transition: all 0.3s ease;
+  top: -7px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: url('../src/img/arrow.svg');
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
 
-.faq__btn::before {
-  top: 10px;
+.swiper-pagination {
+  position: absolute;
+  top: -10px;
+  left: 10px !important;
 }
 
-.faq__btn::after {
-  top: 10px;
-  transform: rotate(90deg);
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
 }
 
-.faq__content p {
-  margin: 0;
-  font-size: 14px;
-  padding: 10px 30px 10px 10px;
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
-
-/* faq end  */
 
 /* Импорт TailWind */
 
@@ -1676,6 +1563,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
+}
+
 .mr-4{
   margin-right: 1rem;
 }
@@ -1700,12 +1595,24 @@ body {
   height: 350px;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-screen{
   height: 100vh;
 }
 
+.w-0{
+  width: 0px;
+}
+
 .w-full{
   width: 100%;
+}
+
+.min-w-\[100\%\]{
+  min-width: 100%;
 }
 
 .max-w-3xl{
@@ -1732,10 +1639,6 @@ body {
   list-style-type: disc;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-\[repeat\(auto-fit\2c _minmax\(320px\2c _1fr\)\)\]{
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
@@ -1758,6 +1661,10 @@ body {
 
 .items-center{
   align-items: center;
+}
+
+.items-stretch{
+  align-items: stretch;
 }
 
 .justify-between{
@@ -1792,8 +1699,8 @@ body {
   border-radius: 0.5rem;
 }
 
-.border{
-  border-width: 1px;
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .border-\[2px\]{
@@ -1838,9 +1745,24 @@ body {
   padding: 1.25rem;
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-11{
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
 }
 
 .py-12{
@@ -1863,13 +1785,16 @@ body {
   padding-bottom: 1.25rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pb-11{
   padding-bottom: 2.75rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
 }
 
 .pt-20{
@@ -1878,10 +1803,6 @@ body {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pl-5{
-  padding-left: 1.25rem;
 }
 
 .text-left{
@@ -1919,6 +1840,15 @@ body {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .font-normal{
@@ -2063,12 +1993,12 @@ body {
     margin-bottom: 4rem;
   }
 
-  .md\:mb-6{
-    margin-bottom: 1.5rem;
-  }
-
   .md\:mb-36{
     margin-bottom: 9rem;
+  }
+
+  .md\:mb-6{
+    margin-bottom: 1.5rem;
   }
 
   .md\:block{
@@ -2095,6 +2025,11 @@ body {
     padding: 1.5rem;
   }
 
+  .md\:px-11{
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
   .md\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -2108,16 +2043,6 @@ body {
   .md\:py-11{
     padding-top: 2.75rem;
     padding-bottom: 2.75rem;
-  }
-
-  .md\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .md\:px-11{
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
   }
 
   .md\:pt-2{

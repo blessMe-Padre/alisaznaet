@@ -1,33 +1,33 @@
 export const initSlider = () => {
 
-    // слайдер "Наши преподаватели"
-    const teachers = document.querySelector('.teachers');
-    if (teachers) {
-        const swiper = new Swiper('.teachers', {
+    // слайдер "Отзывы"
+    const feedback = document.querySelector('.feedback');
+    if (feedback) {
+        const feedback = new Swiper('.feedback', {
             loop: true,
-            spaceBetween: 20,
+            spaceBetween: 30,
             breakpoints: {
                 374: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 20,
-                },
-                580: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 767: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
+                    slidesPerView: 2,
                 },
                 1023: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
             },
 
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
             },
         });
     }
