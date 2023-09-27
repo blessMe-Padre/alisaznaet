@@ -19,7 +19,7 @@
 /* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
 @font-face {
     font-family: 'archangelsk';
-    src: url('./src/fonts/archangelsk.ttf');
+    src: url('../src/fonts/archangelsk.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
