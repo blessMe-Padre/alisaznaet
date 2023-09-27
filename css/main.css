@@ -791,6 +791,79 @@ button.swiper-pagination-bullet{
   background-color: #fff;
 }
 
+.decor-1 {
+  display: inline-block;
+  padding-right: 60px;
+  background-image: url('../src/img/decor-1.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.decor-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.decor-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -70px;
+  width: 245px;
+  height: 245px;
+  background: url('../src/img/decor-2.svg') no-repeat;
+}
+
+.decor-2::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: -38px;
+  width: 245px;
+  height: 245px;
+  background: url('../src/img/decor-3.svg') no-repeat;
+}
+
+@media (max-width: 768px) {
+  .decor-1 {
+    display: inline-block;
+    padding-right: 30px;
+    background-image: url('../src/img/decor-1.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+@media (max-width: 1100px) {
+  .decor-2::before {
+    display: none;
+  }
+
+  .decor-2::after {
+    display: none;
+  }
+}
+
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: #D1D618;
+  border: 2px solid #ffffff;
+  background-color:#D1D618;
+  border-radius: 100%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  display: none;
+  z-index: 999;
+}
+
+.scroll-top.is-active {
+  display: block;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -1227,6 +1300,10 @@ video {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #262626;
@@ -1404,11 +1481,6 @@ body {
 
 .m-auto{
   margin: auto;
-}
-
-.mx-3{
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mb-12{
@@ -1660,6 +1732,10 @@ body {
   padding-bottom: 2.75rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pl-5{
   padding-left: 1.25rem;
 }
@@ -1678,10 +1754,6 @@ body {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .text-left{

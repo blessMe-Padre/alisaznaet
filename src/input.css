@@ -8,6 +8,8 @@
 @import './block/menu.css';
 @import './block/swiper.css';
 @import './block/sliders.css';
+@import './block/decor.css';
+@import './block/scrool-top.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -25,6 +27,10 @@
 
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         font-family: 'Roboto', sans-serif;
         color: #262626;
