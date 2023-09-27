@@ -1786,6 +1786,10 @@ body {
   padding-top: 1rem;
 }
 
+.font-bodyFont{
+  font-family: archangelsk, regular;
+}
+
 .text-\[67px\]{
   font-size: 67px;
 }

@@ -37,9 +37,9 @@ module.exports = {
       center: true
     },
     extend: {
-      // fontFamily: {
-      //   'bodyFont': ['archangelsk', 'regular'],
-      // }
+      fontFamily: {
+        'bodyFont': ['archangelsk', 'regular'],
+      }
     }
   },
   plugins: [],
