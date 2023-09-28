@@ -753,6 +753,14 @@ button.swiper-pagination-bullet{
   margin: 60px auto 0;
 }
 
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
 .swiper-button-prev::after {
   content: '';
   position: absolute;
@@ -779,7 +787,6 @@ button.swiper-pagination-bullet{
 .swiper-pagination {
   position: absolute;
   top: -10px;
-  left: 10px !important;
 }
 
 .swiper-pagination-bullet {
@@ -1519,6 +1526,10 @@ body {
   margin-right: 1rem;
 }
 
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1688,11 +1699,6 @@ body {
   padding: 1.25rem;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1703,9 +1709,9 @@ body {
   padding-right: 1.25rem;
 }
 
-.py-11{
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-12{
@@ -1721,6 +1727,11 @@ body {
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-5{
@@ -1940,9 +1951,19 @@ body {
     flex-direction: row;
   }
 
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .sm\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .sm\:py-11{
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
   }
 }
 

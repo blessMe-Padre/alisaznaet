@@ -5,6 +5,14 @@
     margin: 60px auto 0;
 }
 
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
 .swiper-button-prev::after {
     content: '';
     position: absolute;
@@ -31,7 +39,6 @@
 .swiper-pagination {
     position: absolute;
     top: -10px;
-    left: 10px !important;
 }
 
 .swiper-pagination-bullet {
