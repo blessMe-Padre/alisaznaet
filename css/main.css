@@ -1497,6 +1497,10 @@ body {
   z-index: 10;
 }
 
+.z-\[1\]{
+  z-index: 1;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -1859,7 +1863,7 @@ body {
 .header-call-button{
   display: block;
   width: 11rem;
-  border-radius: 1.5rem;
+  border-radius: 0.75rem;
   border-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
@@ -1871,7 +1875,8 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
-  font-weight: 600;
+  font-family: archangelsk, regular;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
@@ -1900,6 +1905,10 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
+  font-family: archangelsk, regular;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1942,6 +1951,24 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.important {
+  background-image: url('../src/img/pattern-3.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (max-width: 767px) {
+  .important {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-bg img {
+    display: none;
+  }
 }
 
 .hover\:text-blue:hover{
